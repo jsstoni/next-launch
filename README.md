@@ -5,3 +5,4 @@
 🌍 Multi-language (i18n) with next-intl
 🛡️ Type-safe environment variables with T3 Env
 🛡️ Type safe Server Actions with Next-Safe-Action
+🔒 Authentication with better-auth
