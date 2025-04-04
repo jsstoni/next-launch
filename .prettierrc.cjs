@@ -8,7 +8,7 @@ module.exports = {
   tailwindStylesheet: './src/app/globals.css',
   tailwindFunctions: ['clsx'],
   plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
     'prettier-plugin-tailwindcss',
+    '@ianvs/prettier-plugin-sort-imports',
   ],
 };
