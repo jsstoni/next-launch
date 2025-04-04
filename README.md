@@ -7,3 +7,4 @@
 * 🛡️ Type safe Server Actions with Next-Safe-Action
 * 🔒 Authentication with better-auth
 * 🗂️ ORM with Prisma
+* 🔗 Type-safe search params state manager with Nuqs

@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { routing } from '@/lib/i18n/routing';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,14 +39,16 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+          <NuqsAdapter>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+          </NuqsAdapter>
         </NextIntlClientProvider>
       </body>
     </html>
