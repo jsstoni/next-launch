@@ -12,6 +12,8 @@ export default async function ProtectedPage() {
   }
 
   return (
-    <div className="mx-auto flex max-w-xl flex-col items-center gap-2 border-2 p-4"></div>
+    <div className="mx-auto flex max-w-xl flex-col items-center gap-2 border-2 p-4">
+      Welcome, {session.user.name}!
+    </div>
   );
 }

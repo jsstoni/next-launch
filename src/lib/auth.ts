@@ -1,9 +1,14 @@
 import { env } from '@/lib/env';
 import { betterAuth } from 'better-auth';
+import { prismaAdapter } from 'better-auth/adapters/prisma';
 import { headers } from 'next/headers';
 import { cache } from 'react';
+import prisma from './prisma';
 
 export const auth = betterAuth({
+  database: prismaAdapter(prisma, {
+    provider: 'postgresql',
+  }),
   socialProviders: {
     github: {
       clientId: env.GITHUB_CLIENT_ID,
