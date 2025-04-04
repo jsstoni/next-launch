@@ -1,9 +1,7 @@
 import {
-  createMiddleware,
   createSafeActionClient,
   DEFAULT_SERVER_ERROR_MESSAGE,
 } from 'next-safe-action';
-import { headers } from 'next/headers';
 import { z } from 'zod';
 
 export class ActionError extends Error {}

@@ -1,4 +1,4 @@
-import { auth, getSession } from '@/lib/auth';
+import { getSession } from '@/lib/auth';
 
 export default async function ProtectedPage() {
   const session = await getSession();
