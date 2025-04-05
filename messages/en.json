@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "about": "Go to the about page",
+    "description": "next-launch is a modern boilerplate designed to speed up web application development with Next.js 15. Built for developers who want to focus on building without wasting time on repetitive setup tasks."
   }
 }

@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "title": "Hola mundo!",
-    "about": "Ir a la página de acerca de"
+    "about": "Ir a la página de acerca de",
+    "description": "next-launch es un boilerplate moderno para acelerar el desarrollo de aplicaciones web con Next.js 15. Pensado para desarrolladores que quieren enfocarse en construir sin perder tiempo en configuraciones repetitivas"
   }
 }
